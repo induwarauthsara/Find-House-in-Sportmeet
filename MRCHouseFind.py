@@ -5,7 +5,6 @@
 # Copyright (c) 2023
 # All rights reserved.
 
-
 from os import system, name
 from time import sleep
 def clear():
@@ -18,6 +17,8 @@ def clear():
 
 clear()
 
+print ("#################################\nStudent's House Finder Programme\nMRC Inter-House Sportmeet")
+print ('Developed by Induwara Uthsara\n#################################\n')
 while True:
     index = input('Enter Index No. : ')
     if not (index.isnumeric()):
@@ -49,4 +50,5 @@ while True:
     if(again == 'n'):
         break 
     
-print("Good Bye...!")
+print("Good Bye...!\n")
+print("Github url: https://github.com/induwarauthsara/Find-House-in-Sportmeet")
