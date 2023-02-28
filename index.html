@@ -20,9 +20,9 @@
 
         <img src="logo.png" alt="School Logo">
         <h1>Enter Your Index Number :</h1>
-        <input type="number" id="index" placeholder="Enter Your Index Number" /> <br />
+        <input type="number" id="index" placeholder="Index Number" /> <br />
         <input type="submit" id="submit" onclick="findHouse()" />
-        <h1 id="house">Your House is Wishwa</h1>
+        <h1 id="house"></h1>
         <footer class="footer">
             <p class="footer-text">
                 Developed by
@@ -40,7 +40,7 @@
         index = document.getElementById("index").value;
         h_no = index % 6;
 
-        if (h_no == 0) {
+        if (h_no == 0 && h_no === 0) {
             h = 'Wishwa';
             color = /*"rgb(155, 11, 11)"; */ 'red';
         } else if (h_no == 1) {
@@ -62,11 +62,10 @@
             h = 'Error';
             color = "red";
         }
-
-        document.getElementById("house").innerHTML = "Your House is&nbsp" + h;
-        document.getElementById("house").style.color = color;
-        document.getElementById("house").style['text-shadow'] = '0px 0px 0 #000000;';
-
+        if (index != '') {
+            document.getElementById("house").innerHTML = "Your House is&nbsp" + h;
+            document.getElementById("house").style.color = color;
+        }
 
     }
 </script>
@@ -117,16 +116,24 @@
         color: black;
         font-weight: bold;
         text-align: center;
-        height: 30px;
+        /* height: 30px; */
         bottom: 0%;
-        position: absolute;
+        position: fixed;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: stretch;
-        padding: 5px;
+        /* padding: 5px; */
         font-size: 15px;
         color: wheat;
+    }
+    
+    footer a {
+        color: white;
+    }
+    
+    a:hover {
+        color: red;
     }
 </style>
 </style>
