@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Find Student's House</title>
 </head>
 
@@ -35,109 +36,4 @@
 
 </html>
 
-<script>
-    function findHouse() {
-        index = document.getElementById("index").value;
-        h_no = index % 6;
-
-        if (h_no == 0 && h_no === 0) {
-            h = 'Wishwa';
-            color = /*"rgb(155, 11, 11)"; */ 'red';
-        } else if (h_no == 1) {
-            h = 'Gagana';
-            color = "yellow";
-        } else if (h_no == 2) {
-            h = 'Sayura';
-            color = "blue";
-        } else if (h_no == 3) {
-            h = 'Derana';
-            color = 'green'; /*"rgb(81, 255, 0)"; /* green */
-        } else if (h_no == 4) {
-            h = 'Soorya';
-            color = "rgb(241, 137, 1)"; /* orange */
-        } else if (h_no == 5) {
-            h = 'Pawana';
-            color = "purple";
-        } else {
-            h = 'Error';
-            color = "red";
-        }
-        if (index != '') {
-            document.getElementById("house").innerHTML = "Your House is&nbsp" + h;
-            document.getElementById("house").style.color = color;
-        }
-
-    }
-</script>
-
-<style>
-    body {
-        background-color: #d4d1fc;
-        /* background-color: #899168; */
-        /* background-color: #056e43; */
-        color: #6e0706;
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-    
-    input {
-        min-height: 2rem;
-        margin: 20px;
-        padding: 10px;
-        font-size: 2rem;
-    }
-    
-    #index {
-        width: 30rem;
-        border: 3px solid #771f1e;
-        color: #c61e1c;
-        text-align: center;
-        border-radius: 0.5rem;
-        max-width: 75%;
-    }
-    
-    #submit {
-        color: #f3ca43;
-        background-color: #771f1e;
-        border: 1px solid #f3ca43;
-        border-radius: 1rem;
-        padding: 15px 20px;
-    }
-    
-    #house {
-        /* text-shadow: 2px 2px 0 #000000, -2px -2px 0 #000000, -2px 2px 0 #000000, 2px -2px 0 #000000; */
-        /* text-shadow: 0px 0px 0 #ffffff; */
-        color: rgb(241, 137, 1);
-        font-family: 'Courier New', Courier, monospace;
-    }
-    
-    .footer {
-        background-color: rgb(3, 88, 10);
-        color: black;
-        font-weight: bold;
-        text-align: center;
-        /* height: 30px; */
-        bottom: 0%;
-        position: fixed;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: stretch;
-        /* padding: 5px; */
-        font-size: 15px;
-        color: wheat;
-    }
-    
-    footer a {
-        color: white;
-    }
-    
-    a:hover {
-        color: red;
-    }
-    img{
-        width: 200px;
-    }
-</style>
-</style>
+<script src="script.js"></script>
